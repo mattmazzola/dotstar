@@ -1,0 +1,32 @@
+{
+  "name": "dotstar",
+  "version": "1.0.0",
+  "description": "Library to control Adafruit DotStar LED strip",
+  "main": "dist/dotstar.js",
+  "typings": "dist/dotstar.d.ts",
+  "scripts": {
+    "prepublish": "tsc -p .",
+    "pretest": "tsc typings\\main\\ambient\\node\\index.d.ts typings\\main\\ambient\\jasmine\\index.d.ts test\\dotstar.spec.ts --sourceMap",
+    "test": "jasmine-node test\\dotstar.spec.js --captureExceptions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmazzola/dotstar.git"
+  },
+  "keywords": [
+    "adafruit",
+    "dotstar",
+    "spi",
+    "led",
+    "strip"
+  ],
+  "author": "Matt Mazzola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattmazzola/dotstar/issues"
+  },
+  "homepage": "https://github.com/mattmazzola/dotstar#readme",
+  "devDependencies": {
+    "jasmine-node": "^2.0.0"
+  }
+}
